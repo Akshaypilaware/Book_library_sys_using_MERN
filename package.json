@@ -1,7 +1,7 @@
 {
   "name": "library-management-system",
   "version": "1.0.0",
-  "description": "Library Management Systems using NodeJS ExpressJS MongoDB",
+  "description": "Nanda Library Management Systems using NodeJS ExpressJS MongoDB",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"

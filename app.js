@@ -73,15 +73,15 @@ app.get('*', genreList)
 app.get('*', checkUser)
 app.use('/admin', adminArea, adminRoutes)
 app.use('/', authRoutes)
-app.use('/', indexRoutes) // placed on the bottom of other routes so '/:genre' doesn't interfere with other routes
+app.use('/', indexRoutes) 
 
 mongoose.connect(process.env.DB_URL, {
   useNewUrlParser: true, 
   useUnifiedTopology: true,
   useCreateIndex: true,
 }).then(() => {
-    app.listen(process.env.PORT || 3000, () => {
-      console.log(`Alvin's Library | Listening at http://localhost:${process.env.PORT}`)
+    app.listen(process.env.PORT || 5000, () => {
+      console.log(`Nanda Library | Listening at http://localhost:${process.env.PORT}`)
     })
   })
   .catch((err) => console.log(err))
